@@ -18,6 +18,10 @@ I used a combination of:
 - Z3 theorem proving library
 - PyEDA Boolean minimisation
 
+In the `results` directory, I've only included the results for the timeout-grim-wsls
+scenario to be polite to Github,
+but the scripts will generate the whole set of scenarios described in the blog post.
+
 # How to run it
 
 1. `calc_one_shot_devns.py` uses SageMath to check 

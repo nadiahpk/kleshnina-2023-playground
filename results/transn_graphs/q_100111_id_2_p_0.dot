@@ -1,0 +1,26 @@
+
+digraph {
+    graph [rankdir=TD];
+    node [style=filled];
+    edge [penwidth=2];
+
+    gCC [label="CC", fillcolor="#009988", shape="circle"];
+    gCD [label="CD", fillcolor="#33bbee", shape="circle"];
+    gDC [label="DC", fillcolor="#33bbee", shape="circle"];
+    gDD [label="DD", fillcolor="#ee7733", shape="circle"];
+
+    bCC [label="CC", fillcolor="#009988", shape="doublecircle", color="#ee3377", penwidth=2];
+    bCD [label="CD", fillcolor="#33bbee", shape="doublecircle", color="#ee3377", penwidth=2];
+    bDC [label="DC", fillcolor="#33bbee", shape="doublecircle", color="#ee3377", penwidth=2];
+    bDD [label="DD", fillcolor="#ee7733", shape="doublecircle", color="#ee3377", penwidth=2];
+
+    gCC -> gCC;
+    gCD -> bCC;
+    bCC -> gCC;
+    gDC -> bCC;
+    gDD -> bCC;
+    bCD -> gDD;
+    bDC -> gDD;
+    bDD -> gDD;
+    bDD -> gCC;
+}

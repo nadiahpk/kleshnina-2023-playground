@@ -1,0 +1,15 @@
+
+digraph {
+    graph [rankdir=LR];
+    edge [penwidth=4, minlen=2];
+
+    good [label="good", shape="circle"];
+    bad [label="bad", shape="doublecircle", color="#ee3377", penwidth=2];
+
+    good -> good [color="#009988"];
+    good -> bad [color="#33bbee"];
+    good -> bad [color="#ee7733"];
+    bad -> good [color="#009988"];
+    bad -> good [color="#33bbee"];
+    bad -> good [color="#ee7733"];
+}
