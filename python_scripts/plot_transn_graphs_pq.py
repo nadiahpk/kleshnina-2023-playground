@@ -62,14 +62,6 @@ preamble += '\n'
 # for each q, for each p-group, plot range where ps are SPNE
 # ---
 
-# NOTE
-# idx = "delete_me"
-# qstr = "100111"
-# pstr = "100--001"
-# to check if old still working
-# qstr = "100110"
-# pstr = "11101011"
-
 # generate the needed q sequences
 q_sequences = [
     [1, v[0], 0, 1] + list(v[1:]) for v in it.product([0, 1], repeat=3)
